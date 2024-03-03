@@ -1,0 +1,25 @@
+<h1>Hello World!!</h1>
+
+<p>This is my first webpage!!!</p>
+
+<h2>Isn't that cool</h2>
+
+<h2>My name is {{first_name}}</h2>
+
+
+<p>{{stuff|title}}</p>
+
+<h3>Favorite Pizza</h3>
+
+{% for toppings in favorite_pizza %}
+
+   {% if toppings == 41  %}
+      {{toppings + 100}}<br/>
+   {% else %}
+      {{toppings}}<br/>
+   {% endif %}
+
+ {% endfor %}
+
+<br/><br/>
+ {{favorite_pizza|wordcount}}
